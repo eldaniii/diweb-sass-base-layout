@@ -1,0 +1,21 @@
+/* _header.scss */
+header {
+   background-color: $primary-color;
+   padding: $padding;
+    nav {
+     ul {
+       list-style: none;
+       display: flex;
+        li {
+         margin-right: 1rem;
+          a {
+           color: white;
+           text-decoration: none;
+            &:hover {
+             color: $secondary-color;
+           }
+         }
+       }
+     }
+   }
+ }

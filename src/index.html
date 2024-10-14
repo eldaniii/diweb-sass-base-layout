@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Layout Base SASS</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Sección Hero -->
+        <section id="home">
+            <h1>Bienvenidos a Nuestro Proyecto Sass</h1>
+            <p class="subtitle">Construyendo estilos de forma escalable y modular.</p>
+            <button class="button button-primary">Empezar Ahora</button>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos el equipo de DAW2 dedicado a enseñar el poder de Sass y cómo aplicarlo en proyectos reales.</p>
+        </section>
+
+        <!-- Sección Servicios (con grilla) -->
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-4">
+                        <div class="card">
+                            <h3>Soporte</h3>
+                            <p>Ofrecemos soporte personalizado sobre cómo mejorar tus proyectos usando Sass.</p>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="card">
+                            <h3>Desarrollo de Aplicaciones Web</h3>
+                            <p>Aplicamos buenas prácticas para desarrollar aplicaciones web escalables y eficientes.</p>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="card">
+                            <h3>Formación</h3>
+                            <p>Formación en uso avanzado de CSS con Sass para equipos de desarrollo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Interesado en estudiar con nosotros? <a href="mailto:info@ejemplo.com">Envíanos un mensaje</a>.</p>
+            <button class="button button-secondary">Contáctanos</button>
+        </section>
+
+        <section id="notifications">
+            <div class="card">
+                <h3>Título de la Tarjeta</h3>
+                <p>Contenido de la tarjeta que reutiliza los estilos de caja comunes.</p>
+              </div>
+              
+              <div class="alert">
+                <p>Esto es una alerta estándar.</p>
+              </div>
+              
+              <div class="alert success">
+                <p>Esto es una alerta de éxito.</p>
+              </div>
+              
+              <div class="alert warning">
+                <p>Esto es una alerta de advertencia.</p>
+              </div>              
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; IES ALIXAR - DAW2 - Diseño de Interfaces Web.</p>
+    </footer>
+
+</body>
+</html>

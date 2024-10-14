@@ -1,0 +1,51 @@
+/* _card.scss */
+%box-style {
+   padding: 16px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+
+
+   // Anidamiento de propiedades de fuente
+   font: {
+       family: 'Roboto', sans-serif;
+       size: 16px;
+       weight: 400;
+       style: normal;
+       line-height: 1.5;
+     }
+}
+
+
+.card {
+   @extend %box-style;
+   h3 {
+     font: {
+       weight: 700;  // Sobreescribimos el peso de la fuente solo para el título
+       size: 1.5rem;
+     }
+     margin-bottom: 8px;
+   }
+    p {
+     color: #333;
+     font: {
+       size: 1rem;
+       style: italic;
+     }
+   }
+ }
+
+
+ .alert {
+   @extend %box-style;
+   border-left: 4px solid #f00;
+   background-color: #ffe6e6;
+    &.success {
+     border-left-color: #2ecc71;
+     background-color: #e6ffed;
+   }
+    &.warning {
+     border-left-color: #f39c12;
+     background-color: #fff3e0;
+   }
+ }
